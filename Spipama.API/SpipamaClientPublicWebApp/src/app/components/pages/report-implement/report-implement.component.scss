@@ -1,0 +1,30 @@
+.download-box-container {
+  background-color: #4484ce26;
+  box-shadow: 5px 5px 10px #ebe4e4;
+  border-radius: 5px;
+  padding: 0;
+  transition: all .3s ease-in-out;
+
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.fileDownload {
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.centered-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.centered {
+  justify-content: center;
+}

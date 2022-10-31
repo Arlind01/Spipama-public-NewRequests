@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SpipamaClientPublicWebApp\src\app\%40core\interfaces\INews.ts" />
+    <None Remove="SpipamaClientPublicWebApp\src\app\%40core\viewModels\DocumentsDTOViewModel.ts" />
+    <None Remove="SpipamaClientPublicWebApp\src\app\%40core\viewModels\NewsViewModel.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.7" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.5.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Errors\" />
+    <Folder Include="Files\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="SpipamaClientPublicWebApp\src\assets\i18n\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spipama.Application\Spipama.Application.csproj" />
+    <ProjectReference Include="..\Spipama.Infrastructure.IoC\Spipama.Infrastructure.IoC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="SpipamaClientPublicWebApp\src\app\@core\interfaces\INews.ts" />
+    <TypeScriptCompile Include="SpipamaClientPublicWebApp\src\app\@core\viewModels\DocumentsDTOViewModel.ts" />
+    <TypeScriptCompile Include="SpipamaClientPublicWebApp\src\app\@core\viewModels\NewsViewModel.ts" />
+  </ItemGroup>
+
+</Project>

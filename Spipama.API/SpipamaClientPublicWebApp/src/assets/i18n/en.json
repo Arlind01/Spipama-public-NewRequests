@@ -1,0 +1,93 @@
+{
+  "header": {
+    "kyqu": "Log In",
+    "qeveria": "Government of the Republic of Kosovo",
+    "ministria": "Ministry of Internal Affairs",
+    "rap": "Public Administration Reform"
+  },
+  "sidebar": {
+    "pasqyra": "Reports of implementation",
+    "info": "Information and Documents",
+    "zhvillimet": "Recent Developments",
+    "kontakt": "Contact",
+    "naKontaktoni": "Contact Us",
+    "zyraKryeministrit": "Zyra e Kryeministrit",
+    "programiQeveris": "Government program"
+  },
+  "main": {
+    "forRap": "On Public Administration Reform (PAR)",
+    "description": "Public Administration Reform (PAR) is a platform, on the success and results of which the government is depended for the development and implementation of public policies, and obligations from the European integration process. Public administration reforms create an enabling environment for economic growth and improve services for citizens and business community, while making the public sector more accountable, effective and transparent. In the framework of the Public Administration Reform (RAP), the Government of the Republic of Kosovo is focused on capacity development, rationalization of processes and services that the administration provides to citizens and business community, promoting meritocracy in the recruitment process for civil service, and professionalization of the civil service.",
+    "chooseActionPlan": "Choose an Action Plan"
+  },
+  "pasqyra": {
+    "title": "Report of implementation: ",
+    "activity": "Activities",
+    "indicator": "Indicators",
+    "objStra": "Strategic Objectives",
+    "objSpe": "Specific Objectives",
+    "performance": "Implementation by Institutions"
+  },
+  "info": {
+    "title": "Information and Documents",
+    "document": "{{value}}",
+    "how": "How does Public Administration Reform work in Kosovo ?",
+    "goals": "What are the main goals of the public administration reforms? (Passport of indicators)",
+    "conclusions": "Conclusions of the Special Group for PAR",
+    "minutes": "Minutes from the meetings of the Ministerial Council for Public Administration Reform (MCPAR)",
+    "reports": "PAR Implementation Reports",
+    "strategies": "PAR Strategies",
+    "faq": "Frequently Asked Questions",
+    "govProgram": "Government Program"
+  },
+  "statistics": {
+    "actionPlan": "Action Plans",
+    "actionPlanActive": "Active Action Plans",
+    "activities": "Activities",
+    "implementedActivities": "Implemented activities"
+  },
+  "newsHome": {
+    "title": "Recent developments",
+    "seeAll": "See all",
+    "newsPerPage": "News per page",
+    "latest": "Latest"
+  },
+  "reportsHome": {
+    "title": "RAP implementation reports",
+    "seeAll": "See All",
+    "reportPerPage": "Reports per page",
+    "latest": "Latest"
+  },
+  "charts": {
+    "activitesNumber": "Number of activities",
+    "implemented": "Implemented",
+    "notImplemented": "Not implemented",
+    "total": "Total",
+    "indicator": "Indicators",
+    "implementedActivities": "Implemented Activities",
+    "notImplementedActivites": "Not Implemented Activities",
+    "implementedIndicators": "Implemented Indicators",
+    "notImplementedIndicators": "Not Implemented Indicators"
+  },
+  "footer": {
+    "platform": "PAR Platform",
+    "about": "The PAR Platform was developed in the framework of the project: 'Support for Implementation and Promotion of the Public Administration Modernization Agenda' of the Department for Public Administration Reform of the Ministry of Internal Affairs, implemented by the Consortium CPM and NOVUS",
+    "contactUs": "Contact Us",
+    "comunicationOffice": "Division of Public Communication",
+    "reception": "Reception:",
+    "callCenter": "Calling center:",
+    "copyrights": "All rights reserved @{{value}}"
+  },
+  "contactForm": {
+    "contactUs": "Contact Us",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "E-mail",
+    "message": "Message",
+    "yourName": "Your Name",
+    "yourSurname": "Your Surname",
+    "yourEmail": "Your Email",
+    "yourMessage": "Your Message",
+    "send": "Send"
+  }
+
+}

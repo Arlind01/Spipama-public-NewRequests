@@ -1,0 +1,94 @@
+{
+  "header": {
+    "kyqu": "Kyçu",
+    "qeveria": "Qeveria e Republikës së Kosovës",
+    "ministria": "Ministria e Punëve të Brendshme",
+    "rap": "Reforma e Administratës Publike"
+  },
+  "sidebar": {
+    "pasqyra": "Raportet e zbatimit",
+    "info": "Informata & Dokumente",
+    "zhvillimet": "Zhvillimet e fundit",
+    "kontakt": "Kontakti",
+    "naKontaktoni": "Na shkruani",
+    "zyraKryeministrit": "Zyra e Kryeministrit",
+    "programiQeveris": "Programi i Qeverisë",
+    "komunikimi": "Komunikimi"
+  },
+  "main": {
+    "forRap": "Për Reformën e Administratës Publike",
+    "description": "Reforma në Administratën Publike (RAP) përbën një platformë, nga suksesi dhe rezultatet e së cilës varen zhvillimi dhe zbatimi i politikave të publike dhe detyrimeve nga procesi i integrimit evropian. Reforma e administratës publike krijon një mjedis të favorshëm për rritjen ekonomike dhe përmirësimin e shërbimeve për qytetarët dhe komunitetin e biznesit, ndërsa në të njëjtën kohë duke e bërë sektorin publik më të përgjegjshëm, efektiv dhe transparent.Në kuadër të Reformës së Administratës Publike (RAP), Qeveria e Republikës së Kosovës është e fokusuar në zhvillimin e kapaciteteve, racionalizimin e proceseve dhe shërbimeve që administrata u ofron qytetarëve dhe komunitetit të biznesit, promovimin e meritokracisë në procesin e rekrutimit për shërbimin civil, dhe profesionalizimi i shërbimit civil.",
+    "chooseActionPlan": "Zgjedhni Planin"
+  },
+  "pasqyra": {
+    "title": "Raportet e zbatimit: ",
+    "activity": "Aktivitete",
+    "indicator": "Indikatorë",
+    "objStra": "Objektiva Strategjike",
+    "objSpe": "Objektiva Specifike",
+    "performance": "Zbatimi sipas Institucioneve"
+  },
+  "info": {
+    "title": "Informata & Dokumente",
+    "document": "{{value}}",
+    "how": "Si funksionon Reforma e Administratës Publike në Kosovë ?",
+    "goals": "Cilat janë synimet kryesore të reformave ? (Pasaporta e Indikatoreve)",
+    "conclusions": "Konkluzionet e Grupit Veçantë për RAP",
+    "minutes": "Procesverbalet nga mbledhjet e Këshillit të Ministrave për Reformën në Administratën Publike (KMRAP)",
+    "reports": "Raportet e Zbatimit të RAP",
+    "strategies": "Strategjitë e RAP-it",
+    "faq": "Pyetjet Më Të Shpeshta",
+    "govProgram": "Program i Qeverisë"
+  },
+  "statistics": {
+    "actionPlan": "Plane Veprimi",
+    "actionPlanActive": "Plane Veprimi Aktive",
+    "activities": "Aktivitete",
+    "implementedActivities": "Aktivitete të Zbatuara"
+  },
+  "newsHome": {
+    "title": "Zhvillimet e Fundit",
+    "seeAll": "Shiko të gjitha",
+    "newsPerPage": "Lajme për faqe",
+    "latest": "Të Fundit"
+  },
+  "reportsHome": {
+    "title": "Raportet e zbatimit të RAP",
+    "seeAll": "Shiko të gjitha",
+    "reportPerPage": "Raportet për faqe",
+    "latest": "Të Fundit"
+  },
+  "charts": {
+    "activitesNumber": "Numri i aktiviteteve",
+    "implemented": "Zbatuar",
+    "notImplemented": "Pa Zbatuar",
+    "total": "Gjithësej",
+    "indicator": "Indikatorë",
+    "implementedActivities": "Aktivitetet e Zbatuara",
+    "notImplementedActivites": "Aktivitetet e Pa Zbatuara",
+    "implementedIndicators": "Indikatorët e Zbatuar",
+    "notImplementedIndicators": "Indikatorët e Pa Zbatuar"
+  },
+  "footer": {
+    "platform": "Platforma RAP",
+    "about": "Platforma e RAP është zhvilluar në kuadër të projektit: \"Mbështetje për Zbatimin dhe Promovimin e Agjendës së Modernizimit të Administratës Publike\" të Departamentit për Reformën e Administratës Publike të Ministrisë së Punëve të Brendshme, të zbatuar nga Konsorciumi CPM dhe NOVUS.",
+    "contactUs": "Na kontaktoni",
+    "comunicationOffice": "Divizioni për Komunikim më Publikun",
+    "reception": "Recepsioni:",
+    "callCenter": "Qendra e thirrjeve:",
+    "copyrights": "Të gjitha të drejtat e rezervuara @{{value}}"
+  },
+  "contactForm": {
+    "contactUs": "Na shkruani",
+    "name": "Emri",
+    "surname": "Mbiemri ",
+    "email": "Email-i ",
+    "message": "Mesazhi ",
+    "yourName": "Emri juaj",
+    "yourSurname": "Mbiemri juaj",
+    "yourEmail": "Email-i juaj",
+    "yourMessage": "Mesazhi juaj",
+    "send": "Dërgo"
+  }
+
+}

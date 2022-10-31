@@ -1,0 +1,35 @@
+<footer id="contact" *ngIf="isDataAvaible" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6"> 
+            <div class="footer-item">
+            <img src="assets/images/stemaSmall.png" class="img-fluid logo-footer" alt="">
+            <h6 class="text-white">{{this.getTextId("$footer.platform")}}</h6>
+            <p class="justify-content-center">
+                {{this.getTextId("$footer.about")}}
+            </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-item contact">
+              <h6 [translate]="'footer.contactUs'"></h6>
+              <a href="https://mpb.rks-gov.net/f/27/Divizioni-per-Komunikim-me-Publikun"><p style="text-decoration:underline;">{{this.getTextId("$footer.comunicationOffice")}}</p></a>
+              <p><i class="icofont-phone"></i>+383 (0) 38 200 30 942</p>
+              <p [translate]="'footer.reception'"></p>
+              <p><i class="icofont-phone"></i>+383 (0) 38 200 30 521</p>
+              <p [translate]="'footer.callCenter'"></p>
+              <p><i class="icofont-phone"></i>+383 (0) 38 200 30 900</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12"><div class="footer-bottom-cont"><p class="text-center">{{this.getTextId("$footer.copyrights")}} {{date}}</p></div></div>
+        </div>
+      </div>
+    </div>
+  </footer>

@@ -1,0 +1,56 @@
+<app-header></app-header>
+<section class="section-padding section-video">
+  <div class="container otherContainer">
+    <div class="row">
+      <div class="col-md-5">
+      </div>
+      <div class="col-md-3">
+        <h2 [translate]="'newsHome.title'"></h2>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding section-title">
+
+  <!--<div class="container-fluid">
+    <a href="/"><i class="icofont-arrow-left icofont-4x" style="color:#4484CE"></i></a>
+  </div>-->
+  <div class="container">
+    <div class="row" *ngIf="dataSource != null">
+      <div class="col-md-4 pb-5" *ngFor="let data of dataSource?.data">
+        <div class="card text-white card-has-bg click-col" (click)="routeToNews(data.id);" [ngStyle]="{'background-image': 'url(' + data.imageUrl + ')'}">
+          <!--<img class="card-img d-none" src="{{data?.imageUrl}}" alt="img">-->
+          <div class="card-img-overlay d-flex flex-column">
+            <div class="card-body">
+              <small class="card-meta mb-2" [translate]="'newsHome.title'"></small>
+              <h4 class="card-title mt-0 "><a class="text-white" herf="#">{{ (data.title.length > 55)? (data.title | slice:0:55)+'...':(data.title) }}</a></h4>
+              <p hidden [innerHTML]="data.description" #whatsNew></p>
+              <p class="card-text text-white">{{ getInnerText(whatsNew).length > 150 ? (getInnerText(whatsNew) | slice:0:150) +'...' : getInnerText(whatsNew) }}</p>
+            </div>
+            <div class="card-footer">
+              <div class="media">
+                <div class="media-body">
+                  <h6 class="my-0 text-white d-block"><i class="icofont-clock-time pr-1"></i>{{data.createdOn | date:'d.M.yyyy'}}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-6"></div>
+      <div class="col-6">
+        <mat-paginator [length]="dataSource?.totalRecords"
+                       [pageSize]="dataSource?.pageSize"
+                       [pageSizeOptions]="[9,18,27,36,45]"
+                       (page)="onPaginateChange($event)"
+                       showFirstLastButtons>
+        </mat-paginator>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer id="kontakti"></app-footer>

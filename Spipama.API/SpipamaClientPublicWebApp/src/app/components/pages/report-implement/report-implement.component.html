@@ -1,0 +1,43 @@
+<app-header></app-header>
+<section class="section-padding section-video">
+  <div class="container otherContainer">
+    <div class="row">
+      <div class="col-md-5">
+      </div>
+      <div class="col-md-3">
+        <h2 [translate]="'sidebar.komunikimi'"></h2>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding section-title">
+  <div class="container" *ngIf="!loading">
+    <div class="col-sm-4">
+      <div *ngFor="let filter of filterSelectObj">
+        <select [nbSpinner]="loading" nbSpinnerStatus="success" nbSelect name="{{filter.columnProp}}" class="custom-select" style="height:2.5em;"
+                (change)="filterChange(filter,$event)">
+          <option [value]="item.id" [selected]="item.id == selectedFileCategory" *ngFor="let item of filter.options">{{item.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-3 download-box-container m-2" *ngFor="let data of dataSource.data">
+        <a href="{{data.fileLocation}}" target="_blank" class="centered-flex p-2"><i [ngClass]="data.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0 left-aligned-text">{{data.fileName}}</p></a>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-6"></div>
+      <div class="col-6">
+        <mat-paginator [length]="dataSource?.totalRecords"
+                       [pageSize]="dataSource?.pageSize"
+                       [pageSizeOptions]="[2,18,27,36,45]"
+                       (page)="onPaginateChange($event)"
+                       showFirstLastButtons>
+        </mat-paginator>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer [someInput]="codes" id="kontakti"></app-footer>

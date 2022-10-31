@@ -1,0 +1,384 @@
+<div class="preloader"></div>
+<div *ngIf="isDataAvaible">
+  <nav class="mar">
+    <div class="container otherContainer">
+      <div class="row langStyle">
+        <div class="col-10">
+          <div class="row">
+            <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('al')" class="langClick">Shqip</a></span></h6>
+            <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('sr')" class="langClick">Srpski</a></span></h6>
+            <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('en')" class="langClick">English</a></span></h6>
+          </div>
+        </div>
+        <div class="col-2">
+          <h6 class="pt-2 pl-4 float-right"><span><a style="color: #fff;" href="http://91.187.99.99:8880/app/login">{{this.getTextId("$header.kyqu")}}</a></span></h6>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="navbar-2" class="navbar navbar-expand-md btco-hover-menu navbar-2 pt-1">
+    <div class="container otherContainer">
+      <div class="row navStyle">
+        <div class="logo">
+          <a href="/app/">
+            <img src="assets/images/stemaSmall.png" id="logo-header-2" class="img-fluid" alt="stema Kosove">
+          </a>
+        </div>
+        <div class="gov">
+          <a class="navbar-brand" href="/app/">
+            <span [translate]="'header.qeveria'"></span><br />
+            <span class="font-weight-light small">{{this.getTextId("$header.ministria")}}</span>
+          </a>
+        </div>
+        <div class="rap">
+          <a class="navbar-brand" href="/app/">
+            <span class="float-right">{{this.getTextId("$header.rap")}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="header-2">
+    <div class="container otherContainer">
+      <div class="row">
+        <div class="row minRow">
+          <div class="col-md-2">
+            <div class="sideText font-weight-normal textDecoration">
+              <a class="nav-link" data-scroll href="#pasqyra" mdbWavesEffect>{{this.getTextId("$sidebar.pasqyra")}}</a>
+              <a class="nav-link" data-scroll href="#info" mdbWavesEffect>{{this.getTextId("$sidebar.info")}}</a>
+              <a class="nav-link" data-scroll href="#lajme" mdbWavesEffect>{{this.getTextId("$sidebar.zhvillimet")}}</a>
+              <!--<a class="nav-link" target="_blank" href="" mdbWavesEffect [translate]="'sidebar.programiQeveris'"></a>-->
+              <a class="nav-link" data-scroll href="#komunikimi" mdbWavesEffect>{{this.getTextId("$sidebar.komunikimi")}}</a>
+              <a class="nav-link" data-scroll href="#naKontaktoni" mdbWavesEffect>{{this.getTextId("$sidebar.naKontaktoni")}}</a>
+              <a class="nav-link" data-scroll href="#kontakti" mdbWavesEffect>{{this.getTextId("$sidebar.kontakt")}}</a>
+            </div>
+          </div>
+          <div class="col-md-10 monitoring">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header-2-text">
+                  <h1 class="wow fadeInUp questionText">{{this.getTextId("$main.forRap")}}</h1>
+                  <p>
+                    {{this.getTextId("$main.description")}}
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="header-2-img wow fadeIn">
+                  <img src="assets/images/header-2-img2.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <section id="lajme" class="accordion-section clearfix  section-padding shape-1">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title-2">
+          <h4 class="text-center questionText">{{this.getTextId("$sidebar.zhvillimet")}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" *ngIf="news != null">
+        <div class="col-md-4" *ngFor="let data of news.data">
+          <a href="/news/{{data.id}}">
+            <div class="card text-white card-has-bg click-col" [ngStyle]="{'background-image': 'url(' + data.imageUrl + ')'}">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <small class="card-meta mb-2">{{this.getTextId("$newsHome.title")}}</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">{{ (data.title.length > 55)? (data.title | slice:0:55)+'...':(data.title) }}</a></h4>
+                  <p hidden [innerHTML]="data.description" #whatsNew></p>
+                  <p class="card-text text-white">{{ getInnerText(whatsNew).length > 150 ? (getInnerText(whatsNew) | slice:0:150) +'...' : getInnerText(whatsNew) }}</p>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block"><i class="icofont-clock-time pr-1"></i>{{data.createdOn | date:'d.M.yyyy'}}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-5"></div>
+        <div class="col-5"></div>
+        <div class="col-2">
+          <strong class="float-right"><a href="/list-news" mdbWavesEffect>{{this.getTextId("$newsHome.seeAll")}}</a></strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="komunikimi" class="section-padding text-center section-video">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-2 m-0">
+            <h4 class="text-center questionText m-0">{{this.getTextId("$sidebar.komunikimi")}}</h4>
+          </div>
+        </div>
+      </div>
+      <!--<div class="row centered">
+        <video controls class="video-container">
+          <source src="https://localhost:44398/UploadedFiles/news/video.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>-->
+      <div class="row centered" *ngIf="comunicationFiles">
+        <div class="col-md-5 download-box-container m-2" *ngFor="let data of comunicationFiles">
+          <a href="{{data.fileLocation}}" target="_blank" class="centered-flex p-2"><i [ngClass]="data.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0 left-aligned-text">{{data.fileName}}</p></a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-5"></div>
+        <div class="col-5"></div>
+        <div class="col-2">
+          <strong class="float-right"><a href="/report-implement" mdbWavesEffect>{{this.getTextId("$reportsHome.seeAll")}}</a></strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="accordion-section clearfix  section-padding shape-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-2">
+            <h4 class="text-center questionText">{{this.getTextId("$info.title")}}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default" *ngIf="fileName != null">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading6">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                    {{actionPlanName}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+              <div class="panel-body px-3 mb-4">
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="h6" (click)="downloadStaticDoc(fileRef, fileName)" routerLink="."><i [ngClass]="isPdfFile ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i>{{fileName}}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading0">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse"
+                   data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                    {{this.getTextId("$info.how")}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+              <div class="panel-body px-3 mb-4">
+                <p>
+                  {{this.getTextId("$strategicFrameworkPAR")}}
+                </p>
+                <p>
+                  {{this.getTextId("$reviewingPARstrategy")}}
+                </p>
+                <ul>
+                  <li>
+                    {{this.getTextId("$strategyModernzationPAR")}}
+                  </li>
+                  <li>
+                    {{this.getTextId("$regulationStrategy")}}
+                  </li>
+                  <li>
+                    {{this.getTextId("$improvingPolicyPlanningCoordination")}}
+                  </li>
+                  <li>
+                    {{this.getTextId("$publicFinanceManagementReformStrategy")}}
+                  </li>
+                </ul>
+                <p>
+                  {{this.getTextId("$strategicFrameworkPublicAdministration")}}
+                </p>
+                <p>
+                  {{this.getTextId("$decisionOfCreationStructuresPAR")}}
+                </p>
+                <p>
+                  {{this.getTextId("$specialGroupPAR")}}
+                </p>
+                <p>
+                  {{this.getTextId("$departamentPARinMinistry")}}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading1">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse"
+                   data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  {{this.getTextId("$info.goals")}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+              <div class="panel-body px-3 mb-4">
+                <ul class="list-unstyled">
+                  <li *ngFor="let file of goalsFiles">
+                    <a class="h6 centered-flex fileDownload" href="{{file.fileLocation}}" target="_blank"><i [ngClass]="file.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0">{{file.fileName}}</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading2">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse"
+                   data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                  {{this.getTextId("$info.conclusions")}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body px-3 mb-4">
+                <ul class="list-unstyled">
+                  <li *ngFor="let file of conclusionFiles">
+                    <a class="h6 fileDownload centered-flex" href="{{file.fileLocation}}" target="_blank"><i [ngClass]="file.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0">{{file.fileName}}</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading3">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse"
+                   data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                  {{this.getTextId("$info.minutes")}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <ul class="list-unstyled">
+                  <li *ngFor="let file of minutesFiles">
+                    <a class="h6 fileDownload centered-flex" href="{{file.fileLocation}}" target="_blank"><i [ngClass]="file.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0">{{file.fileName}}</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading pt-2 pb-2 pl-3 pr-3 mb-3" role="tab" id="heading5">
+              <h3 class="panel-title pt-2">
+                <a class="collapsed questionText" role="button" title="" data-toggle="collapse"
+                   data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    {{this.getTextId("$info.strategies")}}
+                </a>
+              </h3>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+              <div class="panel-body px-3 mb-4">
+                <ul class="list-unstyled">
+                  <li *ngFor="let file of strategiesFiles">
+                    <a class="h6 fileDownload centered-flex" href="{{file.fileLocation}}" target="_blank"><i [ngClass]="file.fileName?.includes('.pdf') ?  'icofont-file-pdf pr-2' : 'icofont-file-word pr-2' "></i><p class="m-0">{{file.fileName}}</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="naKontaktoni" class="section-padding section-video">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-2">
+            <h4 class="text-center questionText">{{'contactForm.contactUs' | translate}}</h4>
+          </div>
+        </div>
+      </div>
+      <form (ngSubmit)="onSubmitContact()" [formGroup]="createContact" #ngForm="ngForm" novalidate="novalidate">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-8">
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">{{this.getTextId("$contactForm.name")}}</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" formControlName="name" placeholder="{{'contactForm.yourName' | translate}}" class="form-control">
+              </div>
+            </div>
+            <!-- Surname input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="surname">{{this.getTextId("$contactForm.surname")}}</label>
+              <div class="col-md-9">
+                <input id="surname" type="text" formControlName="surname" placeholder="{{'contactForm.yourSurname' | translate}}" class="form-control">
+              </div>
+            </div>
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">{{this.getTextId("$contactForm.email")}}</label>
+              <div class="col-md-9">
+                <input id="email" formControlName="email" type="text" placeholder="{{'contactForm.yourEmail' | translate}}" class="form-control">
+              </div>
+            </div>
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">{{this.getTextId("$contactForm.message")}}</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" formControlName="message" placeholder="{{'contactForm.yourMessage' | translate}}" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="form-group col-md-3 ">
+              <ngx-recaptcha2 #captchaElem
+                              [siteKey]="siteKey"
+                              formControlName="recaptcha">
+              </ngx-recaptcha2>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn text-white" style="background-color:#4484CE;">
+                  Dërgo
+                  <i class="icofont-spinner" *ngIf="loading"></i>
+                </button>
+              </div>
+            </div>
+            <div *ngIf="isError != null" class="alert alert-dismissible fade show" [ngClass]="isError ? 'alert-danger' : 'alert-success'" role="alert">
+              <p *ngIf="isError == false"><b>{{this.getTextId("")}}</b></p>
+              <p *ngIf="isError"><b>{{this.getTextId("$messagedidnotsend")}}</b></p>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <app-footer [someInput]="codes" id="kontakti"></app-footer>
+</div>

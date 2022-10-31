@@ -1,0 +1,38 @@
+<nav class="mar">
+  <div class="container otherContainer">
+    <div class="row langStyle">
+      <div class="col-10">
+        <div class="row">
+          <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('al')">Shqip</a></span></h6>
+          <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('sr')">Srpski</a></span></h6>
+          <h6 class="pt-2 pl-3"><span><a style="color: #fff;" (click)="useLanguage('en')">English</a></span></h6>
+        </div>
+      </div>
+      <div class="col-2">
+        <h6 class="pt-2 pl-4 float-right"><span><a style="color: #fff;" href="http://91.187.99.99:8880/app/login" [translate]="'header.kyqu'"></a></span></h6>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-2" class="navbar navbar-expand-md btco-hover-menu navbar-2 pt-1">
+  <div class="container otherContainer">
+    <div class="row navStyle">
+      <div class="logo">
+        <a href="/app/">
+          <img src="assets/images/stemaSmall.png" id="logo-header-2" class="img-fluid" alt="stema Kosove">
+        </a>
+      </div>
+      <div class="gov">
+        <a class="navbar-brand" href="/app/">
+          <span [translate]="'header.qeveria'"></span><br />
+          <span class="font-weight-light small" [translate]="'header.ministria'"></span>
+        </a>
+      </div>
+      <div class="rap">
+        <a class="navbar-brand" href="/app/">
+          <span class="float-right" [translate]="'header.rap'"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

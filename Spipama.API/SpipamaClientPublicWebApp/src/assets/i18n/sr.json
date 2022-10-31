@@ -1,0 +1,93 @@
+{
+  "header": {
+    "kyqu": "Povežite se",
+    "qeveria": "Vlada Republike Kosovo",
+    "ministria": "Ministarstvo Unutrašnjih Poslova",
+    "rap": "Reforma javne uprave"
+  },
+  "sidebar": {
+    "pasqyra": "Pregled implementacije",
+    "info": "Informacije i dokumenti",
+    "zhvillimet": "Nedavni događaji",
+    "kontakt": "Kontakt",
+    "naKontaktoni": "Kontaktirajte nas",
+    "zyraKryeministrit": "Kabinet Premijera",
+    "programiQeveris": "Vladin Program"
+  },
+  "main": {
+    "forRap": "O reformi javne uprave (RJU)",
+    "description": "Reforma javne uprave (RJU) je platforma od čijeg uspeha i rezultata zavisi i vlada za razvoj i sprovođenje javnih politika i obaveza iz procesa evropskih integracija. Reforme javne uprave stvaraju povoljno okruženje za ekonomski rast i poboljšavaju usluge za građane i poslovnu zajednicu, dok javni sektor čine odgovornijim, efikasnijim i transparentnijim. U okviru Reforme Javne Administracije (RJA), Vlada Republike Kosovo je fokusirana na razvoj kapaciteta, racionalizaciju procesa i usluga koje administracija pruža građanima i poslovnoj zajednici, promovišući mertokratiju u procesu zapošljavanja za javne službe, i profesionalizacija državne službe.",
+    "chooseActionPlan": "Izaberite akcioni plan"
+  },
+  "pasqyra": {
+    "title": "Pregled implementacije: {{value}}",
+    "activity": "Aktivnosti",
+    "indicator": "Indikatori",
+    "objStra": "Strateški ciljevi",
+    "objSpe": "Specifični ciljevi",
+    "performance": "Implementacija po Instituciji"
+  },
+  "info": {
+    "title": "Informacije i dokumenti",
+    "document": "{{value}}",
+    "how": "Kako reforma javne uprave funkcioniše na Kosovu ?",
+    "goals": "Koji su glavni ciljevi reforme javne uprave? (pasoš indikatora) ? (Pasaporta e Indikatoreve)",
+    "conclusions": "Zaključci Posebne grupe za RJU",
+    "minutes": "Zapisnici sa sjednica Ministarskog savjeta za reformu javne uprave (MSRJU)",
+    "reports": "Izveštaji o implementaciji RJU",
+    "strategies": "RJU strategije",
+    "faq": "Često Postavljana Pitanja",
+    "govProgram": "Vladin Program"
+  },
+  "statistics": {
+    "actionPlan": "Akcioni planovi",
+    "actionPlanActive": "Aktivni akcioni planovi",
+    "activities": "Aktivnosti",
+    "implementedActivities": "Sprovedene aktivnosti"
+  },
+  "newsHome": {
+    "title": "Nedavni događaji",
+    "seeAll": "Vidi sve",
+    "newsPerPage": "Vesti po stranici",
+    "latest": "Najnovije"
+  },
+  "reportsHome": {
+    "title": "Izveštaji o implementaciji RAP-a",
+    "seeAll": "Vidi sve",
+    "reportPerPage": "Izveštaji po stranici",
+    "latest": "Najnovije"
+  },
+  "charts": {
+    "activitesNumber": "Broj aktivnosti",
+    "implemented": "Implementirano",
+    "notImplemented": "Ne implementirano",
+    "total": "Ukupno",
+    "indicator": "Indikatori",
+    "implementedActivities": "Implementirani Aktivnosti",
+    "notImplementedActivites": "Neprimenjeni aktivnosti",
+    "implementedIndicators": "Implementirani Indikatori",
+    "notImplementedIndicators": "Neprimenjeni Indikatori"
+  },
+  "footer": {
+    "platform": "RJU Platform",
+    "about": "Platforma za RJU je razvijena u okviru projekta: „Podrška implementaciji i unapređenju Agende modernizacije javne uprave“ Odjeljenja za reformu javne uprave Ministarstva unutrašnjih poslova, koji implementiraju Konzorcijum CPM i NOVUS.",
+    "contactUs": "Kontaktirajte nas",
+    "comunicationOffice": "Divizija za Javnu Komunikaciju",
+    "reception": "Recepsioni:",
+    "callCenter": "Call centar:",
+    "copyrights": "Sva prava zadržana @{{value}}"
+  },
+  "contactForm": {
+    "contactUs": "Kontaktirajte nas",
+    "name": "Ime",
+    "surname": "Prezime",
+    "email": "E-mail",
+    "message": "Poruka",
+    "yourName": "Vaše Ime",
+    "yourSurname": "Vaše Prezime",
+    "yourEmail": "Vaš E-mail",
+    "yourMessage": "Vaša poruka",
+    "send": "Prihvati"
+  }
+
+}
